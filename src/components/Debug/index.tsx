@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function DebugIndex(props: any) {
-	console.log('props: ', props);
+	useEffect(() => {
+		console.log('debuger', props);
+	}, [props]);
 
 	return <div>DebugIndex</div>;
 }

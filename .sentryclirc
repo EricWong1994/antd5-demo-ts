@@ -1,0 +1,7 @@
+[defaults]
+url=http://localhost:9000/
+org=sentry
+project=hello-world
+
+[auth]
+token=

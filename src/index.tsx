@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import * as Sentry from '@sentry/react';
+import { Integrations } from '@sentry/tracing';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,6 +9,18 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
+
+Sentry.init({
+	dsn: 'http://e925228a07184efdb888c82c12fd01c8@localhost:9000/2',
+	integrations: [new Integrations.BrowserTracing()],
+
+	// Set tracesSampleRate to 1.0 to capture 100%
+	// of transactions for performance monitoring.
+	// We recommend adjusting this value in production
+	tracesSampleRate: 1.0,
+	// logErrors: true
+	release: 'pro@1.0.1',
+});
 
 root.render(
 	<React.StrictMode>

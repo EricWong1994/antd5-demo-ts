@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, ConfigProvider, theme } from 'antd';
 import ThemeComp from './components/ThemeComp';
 import DebugIndex from './components/Debug';
+import HelloWorld from './components/HelloWorld';
 
 const App: React.FC = () => (
 	<ConfigProvider
@@ -23,6 +24,7 @@ const App: React.FC = () => (
 			},
 		}}
 	>
+		<HelloWorld />
 		<ThemeComp />
 		<Button>切换主题</Button>
 		<DebugIndex title='debug学习' />

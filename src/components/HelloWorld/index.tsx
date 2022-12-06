@@ -1,7 +1,13 @@
 import { Button } from 'antd';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function HelloWorld() {
+	useEffect(() => {
+		console.log('effect');
+
+		return () => {};
+	}, []);
+
 	const onClick = () => {
 		// @ts-ignore
 		console.log(a);

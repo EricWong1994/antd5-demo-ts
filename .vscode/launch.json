@@ -3,6 +3,7 @@
 	"configurations": [
 		{
 			"type": "chrome",
+			// "type": "pwa-chrome",
 			// "request": "attach",
 			"request": "launch",
 			// "port": 9222,

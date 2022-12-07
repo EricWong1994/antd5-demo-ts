@@ -1,25 +1,11 @@
 {
-	"version": "0.2.0",
 	"configurations": [
 		{
-			"type": "chrome",
-			// "type": "pwa-chrome",
-			// "request": "attach",
+			"name": "Launch Program",
+			"runtimeArgs": ["run-script", "start"],
 			"request": "launch",
-			// "port": 9222,
-			"name": "Launch Chrome against localhost",
-			"url": "http://localhost:3000",
-			// "file": "${workspaceFolder}/public/index.html",
-			"userDataDir": false,
-			"runtimeExecutable": "canary",
-			"runtimeArgs": [
-				"--auto-open-devtools-for-tabs"
-				// "--incognito" // 无痕模式启动，也就是不加载插件，没有登录状态
-			],
-			// "sourceMaps": false,
-			"webRoot": "${workspaceFolder}"
-			// "userDataDir": "~/Desktop/debug"
-			// "userDataDir": "/Users/wangshihao/Desktop/debug"
+			"skipFiles": ["<node_internals>/**"],
+			"type": "node"
 		}
 	]
 }

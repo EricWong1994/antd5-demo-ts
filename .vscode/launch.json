@@ -1,11 +1,25 @@
 {
 	"configurations": [
 		{
-			"name": "Launch Program",
-			"runtimeArgs": ["run-script", "start"],
+			"name": "Launch via NPM",
 			"request": "launch",
+			"runtimeArgs": ["run-script", "start"],
+			"runtimeExecutable": "npm",
 			"skipFiles": ["<node_internals>/**"],
+			"console": "integratedTerminal",
 			"type": "node"
 		}
 	]
 }
+// {
+// 	"configurations": [
+// 		{
+// 			"name": "Launch Program",
+// 			"program": "${workspaceFolder}/node_modules/.bin/react-scripts",
+// 			"args": ["start"],
+// 			"request": "launch",
+// 			"skipFiles": ["<node_internals>/**"],
+// 			"type": "node"
+// 		}
+// 	]
+// }

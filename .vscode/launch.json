@@ -13,25 +13,25 @@
 // 	]
 // }
 
-{
-	"configurations": [
-		{
-			"name": "Launch Chrome",
-			"request": "launch",
-			"type": "chrome",
-			"runtimeExecutable": "canary",
-			"runtimeArgs": [
-				"--auto-open-devtools-for-tabs"
-				// 无痕模式
-				// "--incognito"
-			],
-			"userDataDir": false,
-			// "sourceMaps": false,
-			"url": "http://localhost:3000",
-			"webRoot": "${workspaceFolder}"
-		}
-	]
-}
+// {
+// 	"configurations": [
+// 		{
+// 			"name": "Launch Chrome",
+// 			"request": "launch",
+// 			"type": "chrome",
+// 			"runtimeExecutable": "canary",
+// 			"runtimeArgs": [
+// 				"--auto-open-devtools-for-tabs"
+// 				// 无痕模式
+// 				// "--incognito"
+// 			],
+// 			"userDataDir": false,
+// 			// "sourceMaps": false,
+// 			"url": "http://localhost:3000",
+// 			"webRoot": "${workspaceFolder}"
+// 		}
+// 	]
+// }
 
 // 手动配置program .bin/脚本
 // {
@@ -47,17 +47,17 @@
 // 	]
 // }
 
-// Launch via NPM
-// {
-// 	"configurations": [
-// 		{
-// 			"name": "Launch via NPM",
-// 			"request": "launch",
-// 			"runtimeArgs": ["run-script", "start"],
-// 			"runtimeExecutable": "npm",
-// 			"skipFiles": ["<node_internals>/**"],
-// 			"console": "integratedTerminal",
-// 			"type": "node"
-// 		}
-// 	]
-// }
+// // Launch via NPM
+{
+	"configurations": [
+		{
+			"name": "Launch via NPM",
+			"request": "launch",
+			"runtimeArgs": ["run-script", "start"],
+			"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**"],
+			"console": "integratedTerminal",
+			"type": "node"
+		}
+	]
+}

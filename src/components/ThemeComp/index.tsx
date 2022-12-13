@@ -1,5 +1,5 @@
 import React from 'react';
-import { ConfigProvider, Button, Radio, Checkbox } from 'antd';
+import { Button, Radio, Checkbox } from 'antd';
 
 export default function ThemeComp() {
 	return (

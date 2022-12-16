@@ -24,9 +24,9 @@ const App: React.FC = () => (
 			},
 		}}
 	>
-		<HelloWorld />
-		<ThemeComp />
-		<Button>切换主题</Button>
+		{/* <HelloWorld /> */}
+		{/* <ThemeComp /> */}
+		{/* <Button type='primary'>切换主题</Button> */}
 		<DebugIndex title='debug学习' />
 	</ConfigProvider>
 );

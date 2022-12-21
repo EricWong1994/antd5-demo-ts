@@ -1,12 +1,13 @@
 // import { Button } from 'antd';
 import { Button } from 'antd/dist/antd';
 import React, { useEffect, useState } from 'react';
+import InputDemo from '../antd/Input';
 
 export default function DebugIndex(props: any) {
 	const [count, setCount] = useState(0);
-	useEffect(() => {
-		console.log('debuger', props);
-	}, [props]);
+	// useEffect(() => {
+	// 	console.log('debuger', props);
+	// }, [props]);
 
 	return (
 		<div>
@@ -27,6 +28,7 @@ export default function DebugIndex(props: any) {
 				fetch
 			</button> */}
 			<Button>debug antd按钮</Button>
+			<InputDemo />
 		</div>
 	);
 }

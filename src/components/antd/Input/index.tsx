@@ -5,18 +5,21 @@ import TextField from '../TextField';
 export default function InputDemo() {
 	const [value, setValue] = useState('');
 
-	const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+	// const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+	const onChange = (e: any) => {
 		const newValue = e.target.value;
-		console.log('newValue: ', newValue);
+		// const newValue = e;
 		setValue(newValue);
 	};
 	return (
 		<div>
+			{/* <TextField */}
 			<TextField
-				value={value}
+				// value={value}
 				defaultValue='哈哈哈'
 				onChange={onChange}
 			/>
+			{/* <Input value={value} defaultValue='哈哈哈' onChange={onChange} /> */}
 		</div>
 	);
 }
